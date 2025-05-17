@@ -1,0 +1,17 @@
+export const usuarios = [
+  {
+    id: 1,
+    name: "andres",
+    lastname: "pereira",
+    password: "andres1234",
+    rol: "admin",
+  },
+  { id: 2, name: "juan", lastname: "rua", password: "juan1234", rol: "port" },
+  {
+    id: 3,
+    name: "stiven",
+    lastname: "catalan",
+    password: "catalan1234",
+    rol: "resident",
+  },
+];

@@ -1,0 +1,83 @@
+.NavbarHome {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 40px;
+  border: 1px solid black;
+  background-image: url("../../assets/images/backgroup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+  border-radius: 0 0 15% 15%;
+
+  h1 {
+    color: whitesmoke;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    i {
+      color: red;
+    }
+  }
+
+  .pages {
+    color: wheat !important;
+    width: 40%;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 30px;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 1s;
+      }
+      a:hover {
+        color: red;
+        font-size: 700;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    h1 {
+      font-size: 32px;
+      left: 0;
+      margin-bottom: 10px;
+    }
+    .pages {
+      width: 100%;
+      ul {
+        font-size: 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    h1 {
+      font-size: 24px;
+    }
+    .pages {
+      ul {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.nosotros {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  .mision {
+    display: flex;
+    justify-content: space-between;
+    i {
+      color: red;
+    }
+    .texto {
+      text-align: center;
+      width: 50%;
+      position: relative;
+      top: 50px;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  .vision {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+    i {
+      color: red;
+    }
+
+    .textoV {
+      text-align: center;
+      width: 50%;
+      position: relative;
+      top: 100px;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  .valoresconvenios {
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 16px 20px;
+    }
+
+    th {
+      background: #f8f8f8;
+      color: red;
+      font-weight: 600;
+      border-bottom: 2px solid #eee;
+    }
+
+    td {
+      border-bottom: 1px solid #eee;
+      color: #333;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+}
+img {
+  width: 500px;
+  border-radius: 10px;
+}

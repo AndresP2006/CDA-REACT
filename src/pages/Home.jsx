@@ -1,7 +1,10 @@
 import Carrusel from "../components/carrusel/Carrusel";
+import Login from "../components/login/Login";
 import NavbarHome from "../layouts/header/header.home";
-import "./home.scss";
-const images = [
+import "../styles/home.scss";
+import mapa from "../assets/images/mapa.png";
+import Footer from "../layouts/footer/footer.home";
+const imagesCarrusel = [
   { id: 1, src: require("../assets/images/rivera1.jpg") },
   { id: 2, src: require("../assets/images/rivera2.jpg") },
   { id: 3, src: require("../assets/images/rivera3.jpg") },
@@ -39,8 +42,10 @@ function Home() {
             calidad de vida, seguridad y acceso a todo lo necesario.
           </p>
         </div>
-        <Carrusel imagenes={images}></Carrusel>
+        <Carrusel imagenes={imagesCarrusel}></Carrusel>
       </div>
+      <Login mapa={mapa}></Login>
+      <Footer></Footer>
     </div>
   );
 }

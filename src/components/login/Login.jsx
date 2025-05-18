@@ -1,12 +1,14 @@
 import "./login.scss";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { usuarios } from "../../db/user";
+import { UserContext } from "../../utils/context/UserContext";
 
 function Login({ mapa }) {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const navegation = useNavigate();
+  const { setUsuario } = useContext(UserContext);
 
   function handleLogin() {
     const session = usuarios.find((u) => {
@@ -14,6 +16,7 @@ function Login({ mapa }) {
     });
 
     if (session) {
+      setUsuario(session);
       if (session.rol === "admin") navegation("/admin/usuarios");
       else if (session.rol === "port") navegation("/porter/visitas");
       else if (session.rol === "resident") navegation("/user/resident");
@@ -35,7 +38,7 @@ function Login({ mapa }) {
         </div>
         <div>
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

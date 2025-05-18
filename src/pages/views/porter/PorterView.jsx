@@ -1,7 +1,9 @@
+import HeaderPorter from "../../../layouts/header/header.porter";
+
 function Porter() {
   return (
     <div>
-      <h1>PORTERO</h1>
+      <HeaderPorter></HeaderPorter>
     </div>
   );
 }

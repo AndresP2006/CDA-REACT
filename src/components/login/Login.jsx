@@ -1,7 +1,7 @@
 import "./login.scss";
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { usuarios } from "../../db/user";
+import usuariosSession from "../../db/user.json";
 import { UserContext } from "../../utils/context/UserContext";
 
 function Login({ mapa }) {
@@ -11,7 +11,7 @@ function Login({ mapa }) {
   const { setUsuario } = useContext(UserContext);
 
   function handleLogin() {
-    const session = usuarios.find((u) => {
+    const session = usuariosSession.usuarios.find((u) => {
       return u.name === user && u.password === password;
     });
 

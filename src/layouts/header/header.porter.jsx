@@ -11,7 +11,9 @@ function HeaderPorter() {
         Control de Registro de <i>Entrada y Salida</i>
       </h1>
       <div>
-        <h2>Bienvenido {Usuario?.name}</h2>
+        <h2>
+          Bienvenido {Usuario?.name} {Usuario?.lastname}
+        </h2>
       </div>
       <div>
         <CerrarSession></CerrarSession>

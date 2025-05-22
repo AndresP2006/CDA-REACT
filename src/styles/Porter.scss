@@ -1,0 +1,86 @@
+.insercion {
+  background-color: rgba(205, 199, 199, 0.671);
+  min-height: 80vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .contador {
+    width: 350px;
+    text-align: center;
+    h2 {
+      color: black;
+      font-weight: bold;
+      font-size: 40px;
+    }
+    div {
+      margin: 10px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(145, 145, 145);
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px black;
+      p {
+        font-size: 100px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+  }
+  .paquete_salida {
+    width: 700px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 300px;
+        height: 50px;
+        border-radius: 20px;
+        padding-left: 10px;
+      }
+      .salida_buscar {
+        position: relative;
+        top: 10px;
+        padding: 10px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: rgb(195, 192, 192);
+        color: #000;
+        font-weight: bold;
+        transition: all 1s;
+      }
+      .salida_buscar:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+  .ingresar_visita_paquete {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+
+    .paquete_visita {
+      position: relative;
+      top: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgb(195, 192, 192);
+      color: #000;
+      font-weight: bold;
+      transition: all 1s;
+    }
+    .paquete_visita:hover {
+      background-color: red;
+      color: white;
+    }
+  }
+}

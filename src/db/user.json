@@ -21,5 +21,48 @@
       "password": "catalan1234",
       "rol": "resident"
     }
+  ],
+  "residentes": [
+    {
+      "id": 1042851729,
+      "name": "bayan",
+      "lastname": "rodriquez",
+      "telefono": 3003489600,
+      "torre": "A",
+      "apartamento": 100,
+      "paquetes": [
+        {
+          "id": 2006,
+          "descripcion": "pc gamer",
+          "recibidor": "portero",
+          "torre": "A",
+          "apartamento": 100
+        }
+      ]
+    }
+  ],
+  "visitas": [
+    {
+      "id": 1000,
+      "name": "josue",
+      "lastname": "sinig",
+      "telefono": 1000000000,
+      "motivo": "ver a un amigo",
+      "horaEntrada": "2025-06-03T15:00:00",
+      "apartamento": 100,
+      "torre": "A",
+      "residente": 1
+    },
+    {
+      "id": 1100,
+      "name": "santiago",
+      "lastname": "sinig",
+      "telefono": 11000000000,
+      "motivo": "ver a un amigo",
+      "horaEntrada": "2025-06-03T15:00:00",
+      "apartamento": 100,
+      "torre": "A",
+      "residente": 1
+    }
   ]
 }

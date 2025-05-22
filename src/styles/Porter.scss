@@ -36,11 +36,11 @@
     display: flex;
     padding: 20px;
     justify-content: space-between;
-    div {
+    .modales {
       display: flex;
       flex-direction: column;
       align-items: center;
-      input {
+      .inputs {
         width: 300px;
         height: 50px;
         border-radius: 20px;

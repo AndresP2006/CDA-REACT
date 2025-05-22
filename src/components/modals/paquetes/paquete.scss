@@ -1,0 +1,91 @@
+.modal-paquete-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  z-index: 1000;
+}
+
+.modal-paquete-contenido {
+  background: linear-gradient(#bdbdbd, #7a7a7a);
+  padding: 25px;
+  border-radius: 12px;
+  width: 450px; /* más ancho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.modal-paquete-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e3e3e;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.modal-paquete-header h2 {
+  font-size: 20px;
+}
+
+.modal-paquete-cerrar-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.formulario-paquete label {
+  display: block;
+  width: 190px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.formulario-paquete input,
+.formulario-paquete textarea,
+.formulario-paquete select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.formulario-paquete-fila {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+
+.formulario-paquete-select {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.formulario-paquete-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 1s;
+}
+
+.formulario-paquete-btn:hover {
+  background-color: red;
+}

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "../../utils/context/UserContext";
 import "./header.scss";
-import { CerrarSession } from "../../components/button/CerrarSession";
+import { CerrarSession } from "../../components/button/cerrarSession/CerrarSession";
 
 function HeaderPorter() {
   const { Usuario } = useContext(UserContext);

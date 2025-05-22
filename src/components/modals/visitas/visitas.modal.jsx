@@ -1,6 +1,7 @@
-import "./modal.scss";
+import "./visita.scss";
+// import datos from "../../../db/user.json";
 
-export function ModalVisitas({ cerrarModal }) {
+export function ModalVisitas({ cerrarModal, ingreso }) {
   return (
     <div className="modalVisitas">
       <div className="modalVisitas__titulo">
@@ -45,7 +46,15 @@ export function ModalVisitas({ cerrarModal }) {
           <option>Arrendatario</option>
         </select>
 
-        <button className="modalVisitas__enviar">Enviar</button>
+        <button
+          className="modalVisitas__enviar"
+          onClick={() => {
+            if (ingreso) ingreso();
+            cerrarModal();
+          }}
+        >
+          Enviar
+        </button>
       </div>
     </div>
   );

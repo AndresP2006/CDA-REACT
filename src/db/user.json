@@ -41,6 +41,33 @@
       ]
     }
   ],
+  "edificios": [
+    {
+      "id": 1,
+      "torre": "A",
+      "apartamento": 100
+    },
+    {
+      "id": 2,
+      "torre": "A",
+      "apartamento": 101
+    },
+    {
+      "id": 3,
+      "torre": "B",
+      "apartamento": 200
+    },
+    {
+      "id": 4,
+      "torre": "B",
+      "apartamento": 201
+    },
+    {
+      "id": 5,
+      "torre": "C",
+      "apartamento": 300
+    }
+  ],
   "visitas": [
     {
       "id": 1000,

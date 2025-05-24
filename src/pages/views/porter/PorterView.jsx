@@ -12,49 +12,18 @@ function Porter() {
   const [count, setCount] = useState(
     datos.visitas ? Object.keys(datos.visitas).length : 0
   );
-  const [idBuscar, setIdBuscar] = useState("");
-  const [datosFiltrados, setDatosFiltrados] = useState({
-    nombre: "",
-    apellido: "",
-    telefono: "",
-    torre: "",
-    apartamento: "",
-    paquetes: "",
-  });
-
-  const ManejarCambio = (e) => {
-    const valor = e.target.value;
-    setIdBuscar(valor);
-
-    // Buscar en datos.residentes
-    const Filtrado = Array.isArray(datos.residentes)
-      ? datos.residentes.find((i) => String(i.id) === valor)
-      : null;
-
-    if (Filtrado) {
-      setDatosFiltrados({
-        nombre: Filtrado.name,
-        apellido: Filtrado.lastname,
-        telefono: Filtrado.telefono,
-        torre: Filtrado.torre,
-        apartamento: Filtrado.apartamento,
-        paquetes: Filtrado.paquetes,
-      });
-    } else {
-      setDatosFiltrados({
-        nombre: "",
-        apellido: "",
-        telefono: "",
-        torre: "",
-        apartamento: "",
-        paquetes: "",
-      });
-    }
-  };
+  const [idPaquete, setIdPaquete] = useState("");
+  function handleBorrar() {
+    setIdPaquete("");
+  }
+  function FiltroIdPersona(e) {
+    setIdPaquete(e.target.value);
+  }
 
   function Ingreso() {
     setCount(count + 1);
   }
+  // count("");
 
   return (
     <div className="porter-view">
@@ -72,15 +41,20 @@ function Porter() {
               className="inputs"
               type="text"
               placeholder="Buscar Persona con Paquete"
-              value={idBuscar}
-              onChange={ManejarCambio}
+              value={idPaquete}
+              onChange={FiltroIdPersona}
             />
             <OpenModal
               clases={"salida_buscar"}
               Servicio={"BUSCAR"}
-              modal={<ModalResidente datos={datosFiltrados} />}
+              modal={
+                <ModalResidente
+                  datosFiltrados={idPaquete}
+                  borrar={handleBorrar}
+                />
+              }
             ></OpenModal>
-            {console.table(datos.residentes)}
+            {/* {console.table(datos.residentes.id === idPaquete)} */}
           </div>
           <div className="modales">
             <input

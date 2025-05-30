@@ -4,22 +4,37 @@
       "id": 1,
       "name": "andres",
       "lastname": "pereira",
+      "telefono": 3003489600,
+      "correo": "andres.pereira@example.com",
+      "torre": "A",
+      "apartamento": 100,
       "password": "andres1234",
-      "rol": "port"
+      "rol": "port",
+      "tipo": "usuario"
     },
     {
       "id": 2,
       "name": "juan",
       "lastname": "rua",
+      "telefono": 3202116434,
+      "correo": "juan.rua@example.com",
+      "torre": "B",
+      "apartamento": 102,
       "password": "juan1234",
-      "rol": "admin"
+      "rol": "admin",
+      "tipo": "usuario"
     },
     {
       "id": 3,
       "name": "stiven",
       "lastname": "catalan",
+      "telefono": 3112233445,
+      "correo": "stiven.catalan@example.com",
+      "torre": "C",
+      "apartamento": 301,
       "password": "catalan1234",
-      "rol": "resident"
+      "rol": "resident",
+      "tipo": "usuario"
     }
   ],
   "residentes": [
@@ -28,15 +43,20 @@
       "name": "bayan",
       "lastname": "rodriquez",
       "telefono": 3003489600,
+      "correo": "bayan.rodriquez@example.com",
       "torre": "A",
       "apartamento": 100,
+      "tipo": "residente",
       "paquetes": [
         {
           "id": 2006,
+          "fecha": "2025-06-03T15:00:00",
           "descripcion": "pc gamer",
           "recibidor": "portero",
+          "estado": "bodega",
           "torre": "A",
-          "apartamento": 100
+          "apartamento": 100,
+          "tipo": "paquete"
         }
       ]
     }
@@ -45,27 +65,32 @@
     {
       "id": 1,
       "torre": "A",
-      "apartamento": 100
+      "apartamento": 100,
+      "tipo": "edificio"
     },
     {
       "id": 2,
       "torre": "A",
-      "apartamento": 101
+      "apartamento": 101,
+      "tipo": "edificio"
     },
     {
       "id": 3,
       "torre": "B",
-      "apartamento": 200
+      "apartamento": 200,
+      "tipo": "edificio"
     },
     {
       "id": 4,
       "torre": "B",
-      "apartamento": 201
+      "apartamento": 201,
+      "tipo": "edificio"
     },
     {
       "id": 5,
       "torre": "C",
-      "apartamento": 300
+      "apartamento": 300,
+      "tipo": "edificio"
     }
   ],
   "visitas": [
@@ -78,7 +103,8 @@
       "horaEntrada": "2025-06-03T15:00:00",
       "apartamento": 100,
       "torre": "A",
-      "residente": 1
+      "residente": 1,
+      "tipo": "visita"
     },
     {
       "id": 1100,
@@ -89,7 +115,8 @@
       "horaEntrada": "2025-06-03T15:00:00",
       "apartamento": 100,
       "torre": "A",
-      "residente": 1
+      "residente": 1,
+      "tipo": "visita"
     }
   ]
 }

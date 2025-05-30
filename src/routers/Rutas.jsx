@@ -37,7 +37,7 @@ export function RutasAdmin() {
       <Route path="/admin/usuarios" element={<Admin></Admin>}></Route>
       <Route path="/admin/visitas" element={"#"}></Route>
       <Route path="/admin/paquetes" element={"#"}></Route>
-      <Route path="/admin/edicios" element={"#"}></Route>
+      <Route path="/admin/edificios" element={"#"}></Route>
       <Route path="/admin/notificaciones" element={"#"}></Route>
       <Route path="/admin/respuesta" element={"#"}></Route>
     </Routes>

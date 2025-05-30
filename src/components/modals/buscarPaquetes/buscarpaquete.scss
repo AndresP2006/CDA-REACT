@@ -77,3 +77,79 @@
 .boton-residente:hover {
   background-color: red;
 }
+
+// Modal de entrega de paquetes
+.entrega {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100001;
+  display: flex;
+  flex-direction: column;
+  .content_entrega {
+    background-color: rgb(173, 171, 171);
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    .encabezado_entrega {
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px white;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 10px;
+      .entrega__titulo {
+        width: 80%;
+        color: white;
+      }
+      button {
+        background-color: transparent;
+        color: #fff;
+        font-size: 30px;
+        border: none;
+      }
+    }
+
+    .entrega__tabla {
+      .entrega__th {
+        padding: 10px 16px;
+        background-color: #757474;
+        color: #fff;
+        border-bottom: 2px solid black;
+        text-align: left;
+        font-size: 20px;
+      }
+      .entrega__td {
+        padding: 8px 14px;
+        background-color: #f5f5f5a8;
+        color: #222;
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+        border: 2px solid gray;
+        button {
+          border-radius: 10px;
+          padding: 5px;
+          font-weight: bold;
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.entrega::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}

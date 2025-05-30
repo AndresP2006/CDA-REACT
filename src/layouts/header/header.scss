@@ -118,3 +118,50 @@
     background-color: red;
   }
 }
+.HeaderAdmin {
+  background-color: #1f2a36;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  h1 {
+    font-size: 30px;
+    width: 310px;
+    text-align: center;
+    i {
+      color: red;
+    }
+  }
+  h2 {
+    position: relative;
+    left: 200px;
+  }
+  .Notificaciones {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    position: relative;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .Notificaciones:hover {
+    background-color: transparent;
+  }
+  button {
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: rgb(31, 78, 62);
+    color: white;
+    font-weight: bold;
+    transition: all 1s;
+  }
+  button:hover {
+    color: black;
+    background-color: red;
+  }
+}

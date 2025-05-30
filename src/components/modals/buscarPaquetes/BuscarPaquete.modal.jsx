@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import datos from "../../../db/user.json";
 import "./buscarpaquete.scss";
-
+import { EntregaPaquete } from "./Entrega.modal";
+import { OpenModal } from "../../button/openModal/OpenModals";
 export const ModalResidente = ({ cerrarModal, datosFiltrados, borrar }) => {
   const [idBuscar, setIdBuscar] = useState("");
   const [totalPaqutes, setTotalPaquetes] = useState(0);
@@ -49,7 +50,11 @@ export const ModalResidente = ({ cerrarModal, datosFiltrados, borrar }) => {
           <label>Total de paquetes:</label>
           <input type="text" value={totalPaqutes} disabled />
 
-          <button className="boton-residente">Paquetes</button>
+          <OpenModal
+            clases={"boton-residente"}
+            Servicio={"Entrega"}
+            modal={<EntregaPaquete IdEntrega={datosFiltrados}></EntregaPaquete>}
+          ></OpenModal>
         </div>
       </div>
     </div>

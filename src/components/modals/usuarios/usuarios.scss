@@ -1,0 +1,103 @@
+.Modal-usuario {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  overflow: auto;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-usuario-container {
+  background-color: #aeacac;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-usuario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.titulo {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.cerrar-modal {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Ingresar-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.Ingresar-datos label {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: start;
+  color: #000000;
+  margin-bottom: 0.2rem;
+}
+
+.Ingresar-datos input,
+.Ingresar-datos select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.Ingresar-datos input:focus,
+.Ingresar-datos select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edificios {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edificios div {
+  flex: 1;
+}
+
+.Ingresar-datos button {
+  padding: 0.6rem;
+  background-color: #000000;
+  color: white;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-items: center;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.Ingresar-datos button:hover {
+  background-color: #0056b3;
+}

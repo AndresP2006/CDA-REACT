@@ -5,7 +5,7 @@ import Informacion from "../pages/Informacion";
 import Admin from "../pages/views/admin/AdminView";
 import Porter from "../pages/views/porter/PorterView";
 import User from "../pages/views/user/UserViews";
-
+import VisitasView from "../pages/views/admin/VisitasView";
 export function RutasIndex() {
   return (
     <Routes>
@@ -35,7 +35,10 @@ export function RutasAdmin() {
   return (
     <Routes>
       <Route path="/admin/usuarios" element={<Admin></Admin>}></Route>
-      <Route path="/admin/visitas" element={"#"}></Route>
+      <Route
+        path="/admin/visitas"
+        element={<VisitasView></VisitasView>}
+      ></Route>
       <Route path="/admin/paquetes" element={"#"}></Route>
       <Route path="/admin/edificios" element={"#"}></Route>
       <Route path="/admin/notificaciones" element={"#"}></Route>

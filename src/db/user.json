@@ -1,7 +1,7 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": 1042851726,
       "name": "andres",
       "lastname": "pereira",
       "telefono": 3003489600,
@@ -10,10 +10,10 @@
       "apartamento": 100,
       "password": "andres1234",
       "rol": "port",
-      "tipo": "usuario"
+      "tipo": "Portero"
     },
     {
-      "id": 2,
+      "id": 1042851727,
       "name": "juan",
       "lastname": "rua",
       "telefono": 3202116434,
@@ -22,10 +22,10 @@
       "apartamento": 102,
       "password": "juan1234",
       "rol": "admin",
-      "tipo": "usuario"
+      "tipo": "Administrador"
     },
     {
-      "id": 3,
+      "id": 1042851728,
       "name": "stiven",
       "lastname": "catalan",
       "telefono": 3112233445,
@@ -34,7 +34,7 @@
       "apartamento": 301,
       "password": "catalan1234",
       "rol": "resident",
-      "tipo": "usuario"
+      "tipo": "resident"
     }
   ],
   "residentes": [
@@ -56,6 +56,116 @@
           "estado": "bodega",
           "torre": "A",
           "apartamento": 100,
+          "tipo": "paquete"
+        }
+      ]
+    },
+    {
+      "id": 1042851730,
+      "name": "lucia",
+      "lastname": "gomez",
+      "telefono": 3101234567,
+      "correo": "lucia.gomez@example.com",
+      "torre": "B",
+      "apartamento": 200,
+      "tipo": "residente",
+      "paquetes": [
+        {
+          "id": 2007,
+          "fecha": "2025-06-10T10:30:00",
+          "descripcion": "libros",
+          "recibidor": "portero",
+          "estado": "entregado",
+          "torre": "B",
+          "apartamento": 200,
+          "tipo": "paquete"
+        }
+      ]
+    },
+    {
+      "id": 1042851731,
+      "name": "carlos",
+      "lastname": "ramirez",
+      "telefono": 3129876543,
+      "correo": "carlos.ramirez@example.com",
+      "torre": "C",
+      "apartamento": 300,
+      "tipo": "residente",
+      "paquetes": [
+        {
+          "id": 2008,
+          "fecha": "2025-06-15T12:00:00",
+          "descripcion": "ropa",
+          "recibidor": "portero",
+          "estado": "bodega",
+          "torre": "C",
+          "apartamento": 300,
+          "tipo": "paquete"
+        }
+      ]
+    },
+    {
+      "id": 1042851732,
+      "name": "mariana",
+      "lastname": "lopez",
+      "telefono": 3134567890,
+      "correo": "mariana.lopez@example.com",
+      "torre": "A",
+      "apartamento": 101,
+      "tipo": "residente",
+      "paquetes": [
+        {
+          "id": 2009,
+          "fecha": "2025-06-20T09:00:00",
+          "descripcion": "zapatos",
+          "recibidor": "portero",
+          "estado": "entregado",
+          "torre": "A",
+          "apartamento": 101,
+          "tipo": "paquete"
+        }
+      ]
+    },
+    {
+      "id": 1042851733,
+      "name": "sofia",
+      "lastname": "martinez",
+      "telefono": 3145678901,
+      "correo": "sofia.martinez@example.com",
+      "torre": "B",
+      "apartamento": 201,
+      "tipo": "residente",
+      "paquetes": [
+        {
+          "id": 2010,
+          "fecha": "2025-06-25T16:00:00",
+          "descripcion": "celular",
+          "recibidor": "portero",
+          "estado": "bodega",
+          "torre": "B",
+          "apartamento": 201,
+          "tipo": "paquete"
+        }
+      ]
+    },
+    {
+      "id": 1042851734,
+      "name": "miguel",
+      "lastname": "torres",
+      "telefono": 3156789012,
+      "correo": "miguel.torres@example.com",
+      "torre": "C",
+      "apartamento": 301,
+      "tipo": "residente",
+      "paquetes": [
+        {
+          "id": 2011,
+          "fecha": "2025-06-28T14:00:00",
+          "descripcion": "bicicleta",
+          "recibidor": "portero",
+          "estado": "bodega",
+          "torre": "C",
+          "apartamento": 301,
           "tipo": "paquete"
         }
       ]
@@ -100,7 +210,7 @@
       "lastname": "sinig",
       "telefono": 1000000000,
       "motivo": "ver a un amigo",
-      "horaEntrada": "2025-06-03T15:00:00",
+      "fechaEntrada": "2025-07-03",
       "apartamento": 100,
       "torre": "A",
       "residente": 1,
@@ -112,10 +222,70 @@
       "lastname": "sinig",
       "telefono": 11000000000,
       "motivo": "ver a un amigo",
-      "horaEntrada": "2025-06-03T15:00:00",
+      "fechaEntrada": "2025-06-13",
       "apartamento": 100,
       "torre": "A",
       "residente": 1,
+      "tipo": "visita"
+    },
+    {
+      "id": 1200,
+      "name": "camila",
+      "lastname": "rodriguez",
+      "telefono": 1200000000,
+      "motivo": "entrega de paquete",
+      "fechaEntrada": "2025-06-20",
+      "apartamento": 200,
+      "torre": "B",
+      "residente": 2,
+      "tipo": "visita"
+    },
+    {
+      "id": 1300,
+      "name": "daniel",
+      "lastname": "gomez",
+      "telefono": 1300000000,
+      "motivo": "reunión",
+      "fechaEntrada": "2025-06-22",
+      "apartamento": 300,
+      "torre": "C",
+      "residente": 3,
+      "tipo": "visita"
+    },
+    {
+      "id": 1400,
+      "name": "laura",
+      "lastname": "perez",
+      "telefono": 1400000000,
+      "motivo": "cumpleaños",
+      "fechaEntrada": "2025-06-25",
+      "apartamento": 101,
+      "torre": "A",
+      "residente": 4,
+      "tipo": "visita"
+    },
+    {
+      "id": 1500,
+      "name": "felipe",
+      "lastname": "ramirez",
+      "telefono": 1500000000,
+      "motivo": "visita familiar",
+      "fechaEntrada": "2025-06-28",
+      "apartamento": 201,
+      "torre": "B",
+      "residente": 5,
+      "tipo": "visita"
+    },
+    {
+      "id": 1600,
+      "name": "valentina",
+      "lastname": "torres",
+      "telefono": 1600000000,
+      "motivo": "entrega de comida",
+      "fechaEntrada": "2025-07-01",
+      "apartamento": 301,
+      "torre": "C",
+      "residente": 6,
       "tipo": "visita"
     }
   ]

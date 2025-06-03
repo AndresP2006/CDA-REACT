@@ -6,6 +6,10 @@ import "../../../styles/admin.scss";
 import { OpenModal } from "../../../components/button/openModal/OpenModals";
 import { useState } from "react";
 import Usuarios from "../../../components/modals/usuarios/Usuarios";
+
+
+
+
 function Admin() {
   const { usuarios, residentes } = datos;
   const [FiltroId, setFiltroId] = useState("");
